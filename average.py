@@ -1,5 +1,8 @@
 # calculate the average of elements in a list
 
+def avg(l):
+    return sum(l) / len(l)
+
 lst = []
 count = 1
 
@@ -9,9 +12,6 @@ for i in range (0, n):
     element = int(input("Element %d: " %count))
     lst.append(element)
     count += 1
-
-def avg(lst):
-    return sum(lst) / n
 
 average = avg(lst)
 
