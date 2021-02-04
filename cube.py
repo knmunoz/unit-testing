@@ -2,9 +2,9 @@
 
 def vol(l):
     if type(l) not in [int, float]:
-        raise TypeError
+        raise TypeError("length must be a valid int or float")
     elif l < 0:
-        raise ValueError
+        raise ValueError("length cannot be less than zero")
     else:
         return l * l * l
 
